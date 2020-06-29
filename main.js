@@ -5,11 +5,13 @@ function formSubmit() {
     getDogPics();
   });
 }
-
+function resultsHTML(message) {
+  return `<img class="containerImage"src='` + message + `'>`;
+}
 function displayResults(responseJSON) {
+  console.log(responseJSON);
   responseJSON.message.forEach((message) => {
-    $('section').append(`<img class="containerImage"src='` + message + `'>`);
-    console.log(message);
+    $('section').append(resultsHTML(message));
   });
 }
 
