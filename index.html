@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog API</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Display Dog Pics</h1>
+    </header>
+    <main>
+      <form>
+        <label for="quantity">Number of dog pics (1-50)</label>
+        <input
+          type="number"
+          name="quantity"
+          id="quantity"
+          min="1"
+          max="50"
+          value="3"
+          required
+        />
+        <input type="submit" name="submit" id="submit" value="submit" />
+      </form>
+      <section id="container"></section>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
