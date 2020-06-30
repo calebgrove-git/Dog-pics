@@ -1,7 +1,8 @@
 function formSubmit() {
   $('form').submit((e) => {
     e.preventDefault();
-    $('section').html(``);
+    $('section img').remove();
+    $('section h2').removeClass('hidden');
     getDogPics();
   });
 }
